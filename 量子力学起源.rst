@@ -1,0 +1,37 @@
+量子力学起源
+============
+
+黑体辐射
+--------
+
+已知的结论：
+
+- 维恩位移定律 :math:`\lambda_m T=c` ， 斯特凡-玻尔兹曼定律 :math:`\int\rho(\lambda,T)\mathrm{d}\lambda=\sigma T^4`
+- 基于玻尔兹曼分布（\ :math:`\bar{E}=kT`\ ）的瑞利金斯公式 :math:`\rho(\nu,T)\mathrm{d}\nu=\frac{8\pi\nu^2}{c^3}kT\mathrm{d}\nu`
+
+由**辐射源量子化**条件 :math:`E=n\hbar\omega` ，得到 :math:`\bar{E}=\hbar\omega/(e^{\hbar\omega/kT}-1)` ，置换瑞利金斯公式中的 :math:`\bar{E}` 得到普朗克公式。
+
+爱因斯坦光子说
+--------------
+
+逸出电子动能 :math:`\frac{1}{2}mv^2=\hbar\omega-W_0`
+
+康普顿散射
+----------
+
+康普顿波长 :math:`\lambda_c=\frac{h}{m_0 c},\lambda'-\lambda=2\lambda_c\sin^2\frac{\theta}{2}`
+
+物质波
+------
+
+.. math::
+	
+	\vec{p}=\hbar\vec{k}\\
+	E=\hbar\omega
+
+对于电磁波，由于真空波速恒定，E与p可互推，其他情况两式独立。
+
+半经典量子论
+------------
+
+索莫非量子化条件： :math:`\oint P_i\mathrm{d}q_i=(n+\frac{1}{2})h` ，其中q为位移度量。结合波尔“定态电子不辐射”假设，可得 :math:`\nu=R_{\infty}c(\frac{1}{n'^{2}}-\frac{1}{n^2}),R_{\infty}=\frac{me^4}{4\pi\hbar^3 c}`
