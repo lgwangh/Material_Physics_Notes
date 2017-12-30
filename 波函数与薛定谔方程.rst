@@ -33,7 +33,7 @@
 由此可以得出：
 
 - 概率守恒定律 :math:`\frac{\partial w}{\partial t}+\vec{\nabla}\cdot\vec{J}=0`
-- 定态薛定谔方程 :math:`\left[-\frac{\hbar^2}{2m}\vec{\nabla}^2+U(\vec{r})\right]\psi=E\psi` ，可得薛定谔方程特解 :math:`\Psi(\vec{r},t)=\psi(\vec{r})\exp{-\frac{iE}{\hbar}t}`
+- 定态薛定谔方程 :math:`\left[-\frac{\hbar^2}{2m}\vec{\nabla}^2+U(\vec{r})\right]\psi=E\psi` ，可得薛定谔方程特解 :math:`\Psi(\vec{r},t)=\psi(\vec{r})\exp(-\frac{iE}{\hbar}t)`
 
 简单势场中解薛定谔方程
 ----------------------
