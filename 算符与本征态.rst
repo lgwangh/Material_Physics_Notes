@@ -51,3 +51,27 @@
 | z向角动量算符  | :math:`\hat{L}_z`                                            | :math:`m\hbar`                  | :math:`球谐函数Y_{lm},|m|\le l`                                        | (2l+1)度简并   |
 +----------------+--------------------------------------------------------------+---------------------------------+------------------------------------------------------------------------+----------------+
 
+对易性与不确定性
+----------------
+
+对易子 :math:`[\hat{F},\hat{G}]=\hat{F}\hat{G}-\hat{G}\hat{F}` 
+
+- 若为0，则两算符对易。有相同的本征函数系；在共同的本征态中，这些算符所对应的力学量能同时确定。
+- 若不为0，力学量不能同时测定，有不确定关系：
+
+	.. math::
+
+		&\sqrt{\langle (\Delta\hat{F})^2 \rangle \langle (\Delta\hat{G})^2 \rangle}\ge\frac{1}{2}|\langle [\hat{F},\hat{G}] \rangle|\\
+		&例如\sqrt{\langle (\Delta\hat{x})^2 \rangle \langle (\Delta\hat{p_x})^2 \rangle}\ge \frac{1}{2}\hbar\\
+		&又例如\sqrt{\langle (\Delta\hat{t})^2 \rangle \langle (\Delta\hat{E})^2 \rangle}\ge \frac{1}{2}\hbar
+
+守恒量
+------
+
+记 :math:`\langle F \rangle=\overline{F}` ，则： 
+
+.. math::
+
+	\frac{\mathrm{d}\overline{F}}{\mathrm{d}t}=\frac{\overline{\partial \hat{F}}}{\partial t}+\frac{\overline{[\hat{F},\hat{H}]}}{i\hbar}
+
+若F不显含t且与H对易，则F为运动守恒量，其期望值、可能值的分布与时间无关。可推出能量、动量、角动量、宇称守恒。 

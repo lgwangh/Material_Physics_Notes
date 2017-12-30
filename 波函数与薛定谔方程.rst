@@ -33,7 +33,7 @@
 由此可以得出：
 
 - 概率守恒定律 :math:`\frac{\partial w}{\partial t}+\vec{\nabla}\cdot\vec{J}=0`
-- 定态薛定谔方程 :math:`\left[-\frac{\hbar^2}{2m}\vec{\nabla}^2+U(\vec{r})\right]\psi=E\psi` ，可得薛定谔方程特解 :math:`\Psi(\vec{r},t)=\psi(\vec{r})e^{-\frac{iE}{\hbar}t}]}`
+- 定态薛定谔方程 :math:`\left[-\frac{\hbar^2}{2m}\vec{\nabla}^2+U(\vec{r})\right]\psi=E\psi` ，可得薛定谔方程特解 :math:`\Psi(\vec{r},t)=\psi(\vec{r})\exp{-\frac{iE}{\hbar}t}`
 
 简单势场中解薛定谔方程
 ----------------------
@@ -61,3 +61,16 @@
 	&E_N=\hbar\omega(n+\frac{1}{2})\\
 	&\psi_n(x)=\sqrt{\frac{\alpha}{\pi^{1/2}2^n n!}}\exp(-\frac{\alpha^2 x^2}{2})H_n(\alpha x)\\
 	&n为自然数，H_n为厄密多项式，\alpha=\sqrt{\frac{m\omega}{\hbar}}
+
+库仑场
+++++++
+
+势场为 :math:`U(r)=-\frac{Ze_s^2}{r}` 。 
+
+.. math::
+
+	&E_n=-\frac{m_e Z^2 e^4}{2\hbar^2 n^2}\\
+	&\psi_{nlm}(r,\theta,\phi)=R_{nl}(r)Y_{lm}(\theta,\phi)\\
+	&主量子数n为正整数，角量子数0\le l<n，磁量子数|m|\le l，能量只与n有关
+
+对于氢原子，将 :math:`m_e Z^2` 替换为折合质量 :math:`\mu=\frac{m_e M}{m_e+M}` 。 
