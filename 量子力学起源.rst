@@ -9,7 +9,7 @@
 - 维恩位移定律 :math:`\lambda_m T=c` ， 斯特凡-玻尔兹曼定律 :math:`\int\rho(\lambda,T)\mathrm{d}\lambda=\sigma T^4`
 - 基于玻尔兹曼分布（\ :math:`\bar{E}=kT`\ ）的瑞利金斯公式 :math:`\rho(\nu,T)\mathrm{d}\nu=\frac{8\pi\nu^2}{c^3}kT\mathrm{d}\nu`
 
-由**辐射源量子化**条件 :math:`E=n\hbar\omega` ，得到 :math:`\bar{E}=\hbar\omega/(e^{\hbar\omega/kT}-1)` ，置换瑞利金斯公式中的 :math:`\bar{E}` 得到普朗克公式。
+由\ **辐射源量子化**\ 条件 :math:`E=n\hbar\omega` ，得到 :math:`\bar{E}=\hbar\omega/(e^{\hbar\omega/kT}-1)` ，置换瑞利金斯公式中的 :math:`\bar{E}` 得到普朗克公式。
 
 爱因斯坦光子说
 --------------

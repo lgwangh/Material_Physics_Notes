@@ -1,2 +1,63 @@
 波函数与薛定谔方程
 ==================
+
+波函数的性质
+------------
+
+- 统计解释：波函数是概率波，即概率密度 :math:`p(\vec{r},t)\propto|\Psi(\vec{r},t)|^2`
+- :math:`\Psi(\vec{r},t)` 平方可积
+- 除个别孤立奇点外，连续单值有界
+- 在势能的有限间断点，波函数导数连续
+
+态叠加原理
+----------
+
+当 :math:`\Psi_i,\Psi_2,\cdots\Psi_n` ，是系统的可能状态时， :math:`\sum_n c_n\Psi_n(c_n为复数)` ，也是系统的可能态
+
+因而任意波函数都可看作平面波函数 :math:`\Psi_{\vec{p}}(\vec{r})\equiv(\frac{1}{2\pi\hbar})^{3/2}e^{\frac{i}{\hbar}\vec{p}\cdot\vec{r}}` 的线性组合，则 :math:`c(\vec{p},t)` 成为波函数的动量表象。两种表象互为傅里叶变换：
+
+.. math::
+
+	c(\vec{p}',t)=\int \Psi^*_{\vec{p}'}(\vec{r})\Psi(\vec{r},t) \mathrm{d}\vec{r}\\
+	\Psi(\vec{r},t)=\int c(\vec{p},t)\Psi_{\vec{p}}(\vec{r})\mathrm{d}\vec{p}
+
+薛定谔方程
+----------
+
+从自由粒子波函数 :math:`\Psi(\vec{r},t)=Ae^{\frac{i}{\hbar}(\vec{p}\cdot\vec{r}-Et)}` 推广，可得能量算符 :math:`\hat{E}=i\hbar\frac{\partial}{\partial t}` ，动量算符 :math:`-i\hbar\vec{\nabla}` 。代入 :math:`E=\frac{p^2}{2m}+U(\vec{r})` 得：
+
+.. math::
+
+	\left[-\frac{\hbar^2}{2m}\vec{\nabla}^2+U(\vec{r})\right]\Psi=i\hbar\frac{\partial}{\partial t}\Psi
+
+由此可以得出：
+
+- 概率守恒定律 :math:`\frac{\partial w}{\partial t}+\vec{\nabla}\cdot\vec{J}=0`
+- 定态薛定谔方程 :math:`\left[-\frac{\hbar^2}{2m}\vec{\nabla}^2+U(\vec{r})\right]\psi=E\psi` ，可得薛定谔方程特解 :math:`\Psi(\vec{r},t)=\psi(\vec{r})e^{-\frac{iE}{\hbar}t}]}`
+
+简单势场中解薛定谔方程
+----------------------
+
+.. index:: 解薛定谔方程, 一维无限深势阱
+
+一维无限深势阱
+++++++++++++++
+
+势场为 :math:`0<x<a时，U(x)=0，否则为\infty` 。很简单，直接解出：
+
+.. math::
+	
+	&E_n=\frac{\pi^2\hbar^2 n^2}{2ma^2}\\
+	&\psi_n(x)=\sqrt{\frac{2}{a}}\sin\frac{n\pi}{a}x\\
+	&n为正整数
+
+线性谐振子
+++++++++++
+
+势场为 :math:`U(x)=\frac{1}{2}m\omega^2 x^2` 。采用\ **“抓两头，带中间”**\ 的方法解：
+
+.. math::
+
+	&E_N=\hbar\omega(n+\frac{1}{2})\\
+	&\psi_n(x)=\sqrt{\frac{\alpha}{\pi^{1/2}2^n n!}}\exp(-\frac{\alpha^2 x^2}{2})H_n(\alpha x)\\
+	&n为自然数，H_n为厄密多项式，\alpha=\sqrt{\frac{m\omega}{\hbar}}
