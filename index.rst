@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-材料物理复习笔记ˋ( ° ▽、° ) 
-============================
+材料物理复习笔记ˋ( ° ▽、° )
+===========================
 
 .. toctree::
    :maxdepth: 2
@@ -14,6 +14,12 @@
    波函数与薛定谔方程.rst
    算符与本征态.rst
    矩阵力学与微扰.rst
+   晶体结构.rst
+   晶体的结合.rst
 
+欢迎随意观赏！ 
 
-欢迎随意观赏！
+词条索引
+========
+
+:ref:`genindex`

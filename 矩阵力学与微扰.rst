@@ -29,12 +29,12 @@ Q表象就是以Q算符的本征函数系 :math:`\{u_n(x)\}` 为基底的表象�
 .. math::
 
 	&能量一级修正E_n^{(1)}=\langle \psi_n^{(0)}|\hat{H}'|\psi_n^{(0)} \rangle=H_{nn}'\\
-	&能量二级修正E_n^{(2)}=\sum_l '\frac{|H_{nl}'|^2}{E_n^{(0)}-E_L^{(0)}}\\
+	&能量二级修正E_n^{(2)}=\sum_l '\frac{|H_{nl}'|^2}{E_n^{(0)}-E_l^{(0)}}\\
 	&波函数一级修正\psi_n^{(1)}=\sum_m '\frac{H_{mn}'}{E_n^{(0)}-E_m^{(0)}}\psi_m^{(0)}
 
 简并定态微扰
 ------------
 
-若 :math:`{E_n^{(0)}}` 中的 :math:`E_i^{(0)}` 为k度简并，即对应k个本征函数 :math:`\phi_1,\phi_2,\cdots\phi_k` ，则应试图通过一级修正消除简并。求矩阵 :math:`\underline{H'}` 的特征值，其中矩阵元 :math:`H_{ab}=\langle \phi_a|\hat{H}'|\phi_b \rangle` ，可以得到 :math:`E_i^{(1)}` 的k个根，若无重根则简并消除。
+若 :math:`{E_n^{(0)}}` 中的 :math:`E_i^{(0)}` 为k度简并，即对应k个本征函数 :math:`\phi_1,\phi_2,\cdots\phi_k` ，则应试图通过一级修正消除简并。求矩阵 :math:`\hat{H'}` 的特征值，其中矩阵元 :math:`H_{ab}=\langle \phi_a|\hat{H}'|\phi_b \rangle` ，可以得到 :math:`E_i^{(1)}` 的k个根，若无重根则简并消除。
 
 修正后的零级近似能量 :math:`E_{ij}=E_i^{(0)}+E_{ij}^{(1)}` ，零级近似波函数 :math:`\psi_{ij}^{(0)}=\vec{c_j}\cdot\vec{\phi}，其中c_j为E_{ij}^{(1)}对应的本征向量` 。
