@@ -1,0 +1,131 @@
+晶格振动与声子
+==============
+
+在原子震动较弱的情况下，可用简谐近似。 
+
+格波的形式
+----------
+
+色散关系：频率-波矢关系。稍后从格波的形式可以看到，在格波中， :math:`q与q+\frac{2\pi n}{a}` 完全等价，因而可将格波限制在简约区 :math:`[-\frac{\pi}{a},\frac{\pi}{a}]` 中。
+
+.. index:: 求解色散关系
+
+一维单原子链
+++++++++++++
+
+.. math::
+
+	&运动方程 m\ddot{\mu}_n=\beta(\mu_{n+1}+\mu_{n-1}-2\mu_n),\mu为原子坐标,\beta为恢复力常数\\
+	&试解\mu_n=Ae^{i(naq-\omega t)},a为晶格常数,q为波矢\\
+	&得-m\omega^2=\beta(e^{-iaq}+e^{iaq}-2)=2\beta(\cos aq-1)\\
+	&则\omega=2\sqrt{\frac{\beta}{m}}\left|\sin\frac{1}{2}aq\right|
+
+- :math:`长波极限：\omega_{min}=0，波速近似一定，v=a\sqrt{\frac{\beta}{m}}=\sqrt{\frac{E}{\rho}}`
+- :math:`短波极限：\omega_{max}=2\sqrt{\frac{\beta}{m}}`
+  
+一维双原子链
+++++++++++++
+
+.. math::
+	
+	\left\{
+	\begin{aligned}
+	M\ddot{\mu}_n&=\beta(\nu_{n+1}+\nu_{n-1}-2\mu_n)\\
+	m\ddot{\nu}_n&=\beta(\mu_{n+1}+\mu_{n-1}-2\nu_n)
+	\end{aligned}
+	\right.
+
+同样进行试解代入，可得到以振幅A,B为自变量的方程组。解久期方程，可得： 
+
+.. math::
+
+	\omega_{\pm}^2=\frac{\beta}{Mm}\left[(M+m)\pm\sqrt{M^2+m^2+2Mm\cos aq}\right]
+
+其中 :math:`\omega_-` 为声频支，为晶胞整体运动，同相位，一般与机械振动、热运动耦合； :math:`\omega_+` 为光频支，为晶胞内部相对运动，反相位，一般与远红外电磁波耦合。 
+
+- :math:`短波极限：\omega_-=\sqrt{2\beta(\frac{1}{M}+\frac{1}{m})}，\omega_+=0` ，质心不动，轻重原子相位完全相反
+- :math:`长波极限：\omega_-=\sqrt{\frac{2\beta}{m}}，相当于重原子不动；\omega_+=\sqrt{\frac{2\beta}{M}}` ，相当于轻原子不动；总效果轻重原子相位完全相同
+
+声子
+----
+
+简谐振子的能量本征值为 :math:`E_{n_q}=\hbar\omega_q(n_q+\frac{1}{2}),n_q为自然数` ，则 :math:`\hbar\omega_q` 为格波的能量量子，称为声子。
+
+声子是准粒子，数目不守恒。能量为 :math:`\hbar\omega_q` ，动量为 :math:`\hbar\vec{q}` 。作为玻色子，其平衡数目服从玻色爱因斯坦分布：
+
+.. math::
+
+	\bar{n}(q)=\frac{1}{\exp\frac{\hbar\omega_q}{k_B T}-1} 
+
+对于任意的振动模式，可以用简谐振动表示， :math:`\mu_n=\sqrt{\frac{1}{N}}\sum_q Q_q(t)e^{iqna}, Q_q(t)为\mu_n的简正坐标。` 
+
+格波的分类与模式数
+------------------
+
+由周期性边界条件，每支波矢q的分布密度 :math:`\rho(q)=\frac{V}{2\pi}` ，则其模式总数为原胞数N。
+
+对于N个原胞，每个原胞仅含r个原子的晶体，有 :math:`[(1纵波+2横波)声频支+(1纵波+2横波)\times(r-1)光频支]\times N个波矢，共3rN个振动模式` 
+
+格波频谱密度
+------------
+
+定义格波频谱密度 :math:`g(\omega)=\frac{1}{V}\frac{\mathrm{d}N(\omega)}{\mathrm{d}\omega},其中N(\omega)表示0\sim\omega范围内的格波模式数` ，则对于n维晶格的某一支格波：
+
+.. math::
+
+	&g_j(\omega)=(\frac{1}{2\pi})^n\frac{\int \mathrm{d}S}{|\vec{\nabla}_{\vec{q}}\omega_j|}\\
+	&一维\int \mathrm{d}S=2,二维\int \mathrm{d}S=\pi q^2,三维\int \mathrm{d}S= \frac{4}{3}\pi q^3\\
+	&而\omega_j(\vec{q})的形式与具体模型有关
+
+晶格比热
+--------
+
+高温下，简谐振子平均能量 :math:`\bar{E}=k_B T` ，晶体内能为 :math:`U=3rNk_B T` ，定容摩尔比热为 :math:`c_v=3k_B N_A` 
+
+低温下，简谐振子平均能量分为两项：
+
+.. math::
+
+	&E=E_0+E(T)\\
+	&零点能E_0=\int_0^{\omega_D}\frac{1}{2}\hbar\omega g(\omega)\mathrm{d}\omega\\
+	&E(T)=\int_0^{\omega_D}\frac{\hbar\omega}{\exp(\frac{\hbar\omega}{k_B T})-1}g(\omega)\mathrm{d}\omega\\
+	&其中\int_0^{\omega_D} g(\omega)\mathrm{d}\omega=\frac{3N}{V}\\
+	&则c_v=3N\frac{\partial E}{\partial T}
+
+爱因斯坦模型
+++++++++++++
+
+色散关系： :math:`\omega\equiv\omega_E` ，算出的热容在高温区符合实验结果，低温区下降过快。
+
+德拜模型
+++++++++
+
+考虑长波极限，用 :math:`\frac{1}{v_s^3}=\frac{1}{3}(\frac{1}{v_{纵波}^3}+\frac{2}{v_{横波}^3})` 作为平均速度，则 :math:`\omega_j(\vec{q})=v_s q` 。
+
+变量代换，德拜温度 :math:`\Theta_D=\frac{\hbar\omega_D}{k_B}` 得出在低温区 :math:`c_v=\frac{12\pi^4}{5}N k_B\left(\frac{T}{\Theta_D}\right)^3\propto T^3` ，符合实验结果。 
+
+非简谐热效应
+------------
+
+简谐近似下，原子平衡位置不变。 
+
+热膨胀
+++++++
+
+格林埃森近似：认为 :math:`\gamma=-\frac{\mathrm{d}\ln \omega_i}{\mathrm{d}\ln V}` 为常数，则晶体物态方程为 :math:`p=-\frac{\mathrm{d}U}{\mathrm{d}V}+\gamma\frac{\bar{E}}{V}` ，得出晶体体膨胀系数：
+
+.. math::
+
+	\alpha=\frac{\gamma}{B}c_v,B为体弹模量
+
+热传导
+++++++
+
+将热传导视作声子的碰撞过程，可得： 
+
+.. math::
+
+	&热导率k=\frac{1}{3}c_v\lambda\bar{v}\\
+	&\lambda为声子平均自由程，\bar{v}为声子平均速度
+
+在三声子过程的准动量守恒 :math:`\hbar\vec{q}_1+\hbar\vec{q}_2=\hbar\vec{q}_3+\hbar\vec{K}_h` 中，若 :math:`\hbar\vec{K}_h\ne \vec{0}` ，则为翻转过程，声子动量变化，产生热阻力。
