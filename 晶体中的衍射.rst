@@ -1,0 +1,57 @@
+晶体中的衍射
+============
+
+倒格子
+------
+
+由波矢空间周期性排列的倒格点组成，倒格矢对应与其正交的晶面，模正比于其晶面间距。倒格子基矢定义为 :math:`\vec{a}_i\cdot\vec{b}_j=2\pi\delta_{ij}` 其中 :math:`\vec{a}` 为正格子\ **原胞**\ 基矢。
+
+则：
+
+.. math::
+
+	&\vec{b}_1=2\pi(\vec{a}_2\times\vec{a}_3)/\Omega 遵循轮换规则\\
+	&其中\Omega=\vec{a}_1\cdot(\vec{a}_2\times\vec{a}_3)为正格子原胞体积。\\
+	&\Omega^*=(2\pi)^3/\Omega
+
+一般可以将 :math:`\vec{a}` 用单位正交基 :math:`\vec{i},\vec{j},\vec{k}` 表示，再计算 :math:`\vec{b}` 。
+
+.. note:: 面心立方的倒格子为体心立方，体心立方的倒格子为面心立方。 
+
+也有相对于晶胞的倒格子，基矢 :math:`\vec{a}^*=2\pi(\vec{b}\times\vec{c})/\Gamma,其中\Gamma为晶胞体积` 。
+
+倒格子的魏格纳-塞茨原胞称为布里渊区。 
+
+衍射条件
+--------
+
+记入射波矢为 :math:`\vec{k}_0` ，出射为 :math:`\vec{k}` ，则出射波幅度为 :math:`A(\vec{k})=\sum_{j=1}^N a_j\exp(i(\vec{k}-\vec{k}_0)\cdot\vec{R}_j)` 则对于衍射极大条件，有三种等价的表述方式： 
+
+- 劳厄方程： :math:`\vec{R}_m` 为某原子位矢，若对于任意 :math:`\vec{R}_m` 均有 :math:`(\vec{k}-\vec{k}_0)\cdot\vec{R}_m=2\pi S_m,S_m为整数` ，则为衍射极大方向。非一维情况下，可得 :math:`\vec{k}-\vec{k}_0=\vec{K}_{h'},\vec{K}_{h'}为一倒格矢，又由于|\vec{k}|=|\vec{k}_0| 得 2\vec{k}_0\cdot\vec{K}_{h'}=\vec{K}_{h'}^2`
+- 布拉格公式：将衍射看作一组晶面上的镜面反射，则 :math:`2d\sin\theta=n\lambda,d为晶面间距,\theta为反射角,n为衍射级次` 时，衍射极大。
+- 表现在倒格子图上，即为入射波矢从原点出发，终止于布里渊区边界。实验中常画成“反射球”的样式：将入射波矢终点置于O，确定起点C，以C为圆心，波矢为半径画圆，圆周上的格点均为可能的反射面 :math:`\vec{K}_{h'}` 。实验中可通过改变波长、旋转晶体使圆周扩展成面，获得衍射斑点。
+  
+原子散射因子
+------------
+
+原子散射因子f，整个原子的散射幅度与一个原子核处的电子的散射幅度之比。 
+
+.. math::
+
+	&根据定义f=\int \exp(i(\vec{k}-\vec{k}_0)\cdot\vec{r})\rho(\vec{r})\\
+	&认为电子分布球对称，将电子密度\rho(\vec{r})代之以径向分布函数U(r)得f(\vec{K})=\int_0^{\infty}U(r)\frac{\sin Kr}{Kr}\mathrm{d}r\\
+	&对于\vec{k}=\vec{k}_0的前向散射，f(0)=Z，Z为电子数
+
+几何结构因子
+------------
+
+考虑晶体结构对于衍射的影响，定义 :math:`F(\vec{K})=\sum_j f_j\exp(i\vec{K}\cdot\vec{r}_j)` 。由于考虑对称性，均采用\ **晶胞**\ 基矢。求和范围包含一个晶胞中的所有原子（例如体心立方中有两个原子）。
+
+晶面 :math:`(h'\: k'\: l')` 的衍射波强度为： 
+
+.. math::
+
+	I_{h'k'l'} &\propto& |F(\vec{K}_{h'k'l'})|^2 = (\mathrm{Re}F)^2+(\mathrm{Im}F)^2\\
+	&=& \left[\sum_j f_j\cos 2\pi(h'x_j+k'y_j+l'z_j)\right]^2+\left[\sum_j f_j\sin 2\pi(h'x_j+k'y_j+l'z_j)\right]^2
+
+可得出有衍射峰时 :math:`h',k',l'` 满足的条件。 
