@@ -55,7 +55,7 @@
 
 .. math::
 
-	\bar{n}(q)=\frac{1}{\exp\frac{\hbar\omega_q}{k_B T}-1} 
+	\bar{n}(q)=\frac{1}{\exp(\frac{\hbar\omega_q}{k_B T})-1} 
 
 对于任意的振动模式，可以用简谐振动表示， :math:`\mu_n=\sqrt{\frac{1}{N}}\sum_q Q_q(t)e^{iqna}, Q_q(t)为\mu_n的简正坐标。` 
 
@@ -82,7 +82,7 @@
 
 高温下，简谐振子平均能量 :math:`\bar{E}=k_B T` ，晶体内能为 :math:`U=3rNk_B T` ，定容摩尔比热为 :math:`c_v=3k_B N_A` 
 
-低温下，简谐振子平均能量分为两项：
+低温下，简谐振子平均能量分为两项： 
 
 .. math::
 
