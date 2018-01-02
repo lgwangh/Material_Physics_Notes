@@ -30,8 +30,8 @@
 	
 	\left\{
 	\begin{aligned}
-	M\ddot{\mu}_n&=\beta(\nu_{n+1}+\nu_{n-1}-2\mu_n)\\
-	m\ddot{\nu}_n&=\beta(\mu_{n+1}+\mu_{n-1}-2\nu_n)
+	M\ddot{\mu}_n&=\beta(\nu_{n}+\nu_{n-1}-2\mu_n)\\
+	m\ddot{\nu}_n&=\beta(\mu_{n}+\mu_{n+1}-2\nu_n)
 	\end{aligned}
 	\right.
 
@@ -74,7 +74,7 @@
 .. math::
 
 	&g_j(\omega)=(\frac{1}{2\pi})^n\frac{\int \mathrm{d}S}{|\vec{\nabla}_{\vec{q}}\omega_j|}\\
-	&一维\int \mathrm{d}S=2,二维\int \mathrm{d}S=\pi q^2,三维\int \mathrm{d}S= \frac{4}{3}\pi q^3\\
+	&一维\int \mathrm{d}S=2,二维\int \mathrm{d}S=2\pi q,三维\int \mathrm{d}S= 4\pi q^2\\
 	&而\omega_j(\vec{q})的形式与具体模型有关
 
 晶格比热

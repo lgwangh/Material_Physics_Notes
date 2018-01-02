@@ -80,12 +80,90 @@
 
 等离子体振荡是没有碰撞情况下的集体运动，是纵波震荡，其频率 :math:`\omega_P^2=\frac{ne^2}{m\varepsilon_0}` ，其能量量子 :math:`\hbar\omega_P` 称为等离体子。
 
+能带论与布洛赫波
+----------------
+
+基本假设：绝热近似、单电子近似、严格周期场。 
+
+由势场的平移对称性和整个晶体的周期性边界条件，得到：
+
+.. math::
+
+	&\psi(\vec{r})=\psi(\vec{r}+N_1 \vec{a}_1)=T_{\vec{a}_1}^{N_1}\psi(\vec{r})=\lambda_{\vec{a}_1}^{N_1}\psi(\vec{r})\\
+	&其中T为平移算符，N_1为\vec{a}_1方向的原胞个数\\
+	&解得本征值\lambda_{\vec{a}_1}=\exp(i\frac{2\pi}{N_1}t_1),t_1为自然数
+
+令波矢 :math:`\vec{k}=\frac{t_1}{N_1}\vec{b}_1+\frac{t_2}{N_2}\vec{b}_2+\frac{t_3}{N_3}\vec{b}_3` 来描述电子的状态，得到布洛赫定理：
+
+.. math::
+
+	&\psi(\vec{r}+\vec{R}_m)=e^{\vec{k}\cdot\vec{R}_m}\psi(\vec{r})\\
+	&则波函数形式为\psi_{\vec{k}}(\vec{r})=e^{i\vec{k}\cdot\vec{r}}u_{\vec{k}}(\vec{r})\\
+	&e^{i\vec{k}\cdot\vec{r}}为行波项；u{\vec{k}}(\vec{r})为调幅，具有晶格周期性
+
+可见 :math:`\vec{k}\Leftrightarrow\vec{k}+\vec{K}'` ，因此色散关系具有\ **周期性**\ ，简约区为 :math:`[-\frac{\pi}{a},\frac{\pi}{a}]` 。
+
 近自由电子近似
 --------------
 
+将周期势场展成傅里叶级数：
+
+.. math::
+
+	&V(x)=V_0+\sum_n 'V_n e^{in\frac{2\pi}{a}x}\\
+	&其中V_n=\frac{1}{a}\int_0^a V(x)e^{-in\frac{2\pi}{a}x}\mathrm{d}x\\
+	&则E^{(0)}(k)=\frac{\hbar^2k^2}{2m}为抛物线型\\
+	&E^{(1)}(k)=0，能级简并\\
+	&E^{(2)}(k)=-\frac{ma^2}{2\p\hbar^2}\sum_n '\frac{|V_n|^2}{n(ka+n\pi)}难以计算其形态\\
+
+考察奇异点 :math:`k=-n\frac{\pi}{A}` ，在此处用简并微扰分析，可得： 
+
+.. math::
+
+	E_{\pm}(k)=T_n\pm|V_n|+T_n(1\pm\frac{2T_n}{|V_n|})\Delta^2
+
+即\ **“大的更大，小的更小”**\ ，出现带隙，宽度为 :math:`2|V_n|`。结合之前的周期条件，可得能带色散关系的整体图像。 
+
+在三维情况下：
+
+- 在布里渊区边界上，能级简并。对于一般位置，有唯一的 :math:`\vec{K}_h使|\vec{k}+\vec{K}_h|=\vec{k}` ，所以是2重简并，但特殊点不同，棱心4重简并，角8重建并。能级简并，意味着波函数要写成线性组合。
+- 在三维中，能量不连续不一定对应禁带，在倒空间其他方向可能是许可能量。
 
 紧束缚电子近似
 --------------
 
+将所有原子的电子波函数的线性叠加作为尝试波函数，考虑简单格子中s电子形成的能带： 
+
+.. math::
+
+	\psi=\sum_l a_l\phi(\vec{r}-\vec{R}_l)\\
+
+近似认为不同原子电子轨道正交，得到： 
+
+.. math::
+
+	&E(\vec{k})=\varepsilon_j-\sum_s J(\vec{R}_s)e^{-i\vec{k}\cdot\vec{R}_s}\approx\varepsilon_j-J_0-\sum_{最近邻} J(\vec{R}_s)e^{-i\vec{k}\cdot\vec{R}_s}\\
+	&其中\varepsilon_0为电子能级，\vec{R}_s为其他原子相对分析对象的位矢\\
+	&J(\vec{R}_s)=\langle \psi(\vec{r})|V(\vec{r})-v(\vec{r}-\vec{R}_s)|\psi(\vec{r}-\vec{R}_s)\rangle,J_0=J(\vec{0})
+
+将 :math:`E(\vec{k})` 化为三角形式后，很容易求出能带宽度。 
+
 电子的准经典运动
 ----------------
+
+对于恒定弱外场，不考虑电子跃迁、衍射、干涉，可得准经典运动基本关系式： 
+
+.. math::
+
+	\vec{v}(\vec{k})=\frac{1}{\hbar}\vec{\nabla}_{\vec{k}}E,\vec{F}=\hbar\frac{\mathrm{d}\vec{k}}{\mathrm{d}t},\vec{v}(\vec{k})为奇函数
+
+进而可得动力学方程（矩阵表示）： 
+
+.. math::
+
+	&(\vec{a})=(\frac{1}{m^*})(\vec{F}),(\frac{1}{m^*})为倒有效质量张量\\
+	&其中矩阵元(\frac{1}{m^*})_{ij}=\frac{1}{\hbar^2}\frac{\partial^2 E}{\partial k_j\partial k_i}
+
+选取主轴坐标系，可将张量对角化， :math:`m_x^*,m_y^*,m_z^*\propto\frac{1}{J_1}` ；若E(k)为各向同性，则化为标量。电子的准动量为 :math:`\hbar\vec{k},\vec{k}为布洛赫波矢` 。 
+
+价带顶，E极大，二阶导数小于0，有效质量为负；价带底有效质量为正。 
