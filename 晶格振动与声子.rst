@@ -89,7 +89,7 @@
 	&E=E_0+E(T)\\
 	&零点能E_0=\int_0^{\omega_D}\frac{1}{2}\hbar\omega g(\omega)\mathrm{d}\omega\\
 	&E(T)=\int_0^{\omega_D}\frac{\hbar\omega}{\exp(\frac{\hbar\omega}{k_B T})-1}g(\omega)\mathrm{d}\omega\\
-	&其中\int_0^{\omega_D} g(\omega)\mathrm{d}\omega=\frac{3N}{V}\\
+	&其中\int_0^{\omega_D} g(\omega)\mathrm{d}\omega=\frac{3N}{V},等价于\frac{3}{8\pi^3}\times\frac{4}{3}\pi q^3=\frac{3N}{V}\\
 	&则c_v=3N\frac{\partial E}{\partial T}
 
 爱因斯坦模型

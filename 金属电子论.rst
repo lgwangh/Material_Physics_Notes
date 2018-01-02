@@ -20,7 +20,7 @@
 	&f(E,T)=\frac{1}{\exp(\frac{E-\mu}{k_B T})+1}\mu为化学势\\
 	&满足电子气数密度n=\int_0^{\infty}f(E,T)g(E)\mathrm{d}E\qquad（条件1）
 
-当 T=0 时， :math:`\mu(0)=E_F` 为费米能， :math:`f(E,0)=1\:(E\le E_F);f(E,0)=0\:(E>E_F)` ，则由条件1可得：
+当 T=0 时， :math:`\mu(0)=E_F` 为费米能， :math:`f(E,0)=1\:(E\le E_F);f(E,0)=0\:(E>E_F)` ，则由条件1（此时等价于 :math:`\frac{2}{8\pi^3}\frac{4}{3}\pi k_F^3=n` ）可得：
 
 .. math::
 
@@ -97,9 +97,9 @@
 
 .. math::
 
-	&\psi(\vec{r}+\vec{R}_m)=e^{\vec{k}\cdot\vec{R}_m}\psi(\vec{r})\\
+	&\psi(\vec{r}+\vec{R}_m)=e^{i\vec{k}\cdot\vec{R}_m}\psi(\vec{r})\\
 	&则波函数形式为\psi_{\vec{k}}(\vec{r})=e^{i\vec{k}\cdot\vec{r}}u_{\vec{k}}(\vec{r})\\
-	&e^{i\vec{k}\cdot\vec{r}}为行波项；u{\vec{k}}(\vec{r})为调幅，具有晶格周期性
+	&e^{i\vec{k}\cdot\vec{r}}为行波项；u_{\vec{k}}(\vec{r})为调幅，具有晶格周期性
 
 可见 :math:`\vec{k}\Leftrightarrow\vec{k}+\vec{K}'` ，因此色散关系具有\ **周期性**\ ，简约区为 :math:`[-\frac{\pi}{a},\frac{\pi}{a}]` 。
 
@@ -114,9 +114,9 @@
 	&其中V_n=\frac{1}{a}\int_0^a V(x)e^{-in\frac{2\pi}{a}x}\mathrm{d}x\\
 	&则E^{(0)}(k)=\frac{\hbar^2k^2}{2m}为抛物线型\\
 	&E^{(1)}(k)=0，能级简并\\
-	&E^{(2)}(k)=-\frac{ma^2}{2\p\hbar^2}\sum_n '\frac{|V_n|^2}{n(ka+n\pi)}难以计算其形态\\
+	&E^{(2)}(k)=-\frac{ma^2}{2\pi\hbar^2}\sum_n '\frac{|V_n|^2}{n(ka+n\pi)}难以计算其形态\\
 
-考察奇异点 :math:`k=-n\frac{\pi}{A}` ，在此处用简并微扰分析，可得： 
+考察奇异点 :math:`k=-n\frac{\pi}{a}` ，在此处用简并微扰分析，可得： 
 
 .. math::
 
@@ -167,3 +167,15 @@
 选取主轴坐标系，可将张量对角化， :math:`m_x^*,m_y^*,m_z^*\propto\frac{1}{J_1}` ；若E(k)为各向同性，则化为标量。电子的准动量为 :math:`\hbar\vec{k},\vec{k}为布洛赫波矢` 。 
 
 价带顶，E极大，二阶导数小于0，有效质量为负；价带底有效质量为正。 
+
+费米面
+------
+
+对于η个价电子的金属晶体，电子总数为ηN，约化布里渊区的状态密度为 :math:`\frac{2N}{\Omega^*}` 。以二位晶格为例：
+
+.. math::
+
+	&\pi k_F^2\frac{2N}{\Omega^*}=\eta N\\
+	&则k_F=\frac{\pi}{a}\times\sqrt{\frac{2\eta}{\pi}}\propto\sqrt{\eta}
+
+又由近自由电子模型得：费米面总是与布里渊区边界垂直；费米面尖角处钝化；布里渊区边界处有能隙。据此可画出费米面，根据其与布里渊区的关系，判断各布里渊区的能带形态。
