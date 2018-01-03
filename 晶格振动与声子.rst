@@ -43,8 +43,8 @@
 
 其中 :math:`\omega_-` 为声频支，为晶胞整体运动，同相位，一般与机械振动、热运动耦合； :math:`\omega_+` 为光频支，为晶胞内部相对运动，反相位，一般与远红外电磁波耦合。 
 
-- :math:`短波极限：\omega_-=\sqrt{2\beta(\frac{1}{M}+\frac{1}{m})}，\omega_+=0` ，质心不动，轻重原子相位完全相反
-- :math:`长波极限：\omega_-=\sqrt{\frac{2\beta}{m}}，相当于重原子不动；\omega_+=\sqrt{\frac{2\beta}{M}}` ，相当于轻原子不动；总效果轻重原子相位完全相同
+- :math:`短波极限：\omega_+=\sqrt{2\beta(\frac{1}{M}+\frac{1}{m})}，\omega_-=0` ，质心不动，轻重原子相位完全相反
+- :math:`长波极限：\omega_+=\sqrt{\frac{2\beta}{m}}，相当于重原子不动；\omega_-=\sqrt{\frac{2\beta}{M}}` ，相当于轻原子不动；总效果轻重原子相位完全相同
 
 声子
 ----

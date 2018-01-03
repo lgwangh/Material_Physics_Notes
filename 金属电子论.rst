@@ -124,7 +124,7 @@
 
 即\ **“大的更大，小的更小”**\ ，出现带隙，宽度为 :math:`2|V_n|`。结合之前的周期条件，可得能带色散关系的整体图像。 
 
-在三维情况下：
+在三维情况下： 
 
 - 在布里渊区边界上，能级简并。对于一般位置，有唯一的 :math:`\vec{K}_h使|\vec{k}+\vec{K}_h|=\vec{k}` ，所以是2重简并，但特殊点不同，棱心4重简并，角8重建并。能级简并，意味着波函数要写成线性组合。
 - 在三维中，能量不连续不一定对应禁带，在倒空间其他方向可能是许可能量。
@@ -144,7 +144,7 @@
 
 	&E(\vec{k})=\varepsilon_j-\sum_s J(\vec{R}_s)e^{-i\vec{k}\cdot\vec{R}_s}\approx\varepsilon_j-J_0-\sum_{最近邻} J(\vec{R}_s)e^{-i\vec{k}\cdot\vec{R}_s}\\
 	&其中\varepsilon_0为电子能级，\vec{R}_s为其他原子相对分析对象的位矢\\
-	&J(\vec{R}_s)=\langle \psi(\vec{r})|V(\vec{r})-v(\vec{r}-\vec{R}_s)|\psi(\vec{r}-\vec{R}_s)\rangle,J_0=J(\vec{0})
+	&J(\vec{R}_s)=-\langle \psi(\vec{r})|V(\vec{r})-v(\vec{r}-\vec{R}_s)|\psi(\vec{r}-\vec{R}_s)\rangle,J_0=J(\vec{0})
 
 将 :math:`E(\vec{k})` 化为三角形式后，很容易求出能带宽度。 
 

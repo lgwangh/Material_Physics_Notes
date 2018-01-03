@@ -22,7 +22,7 @@
 半导体能带
 ----------
 
-电子跃迁要吸收光子，要求 :math:`\hbar\omega\le E` ，则长波极限（本征吸收边） :math:`\lambda_0=\frac{2\pi\hbar c}{E_g}` 。
+电子跃迁要吸收光子，要求 :math:`\hbar\omega\ge E` ，则长波极限（本征吸收边） :math:`\lambda_0=\frac{2\pi\hbar c}{E_g}` 。
 
 两种半导体： 
 

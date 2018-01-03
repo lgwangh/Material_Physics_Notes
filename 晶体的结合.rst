@@ -4,13 +4,15 @@
 内聚能
 ------
 
-两粒子的相互作用势 :math:`u(r)=-\frac{A}{r^m}+\frac{B}{r^n}，其中m<n` ，在 :math:`r=r_0` 处引力与斥力平衡， :math:`U(r)` 取最小值，即内聚能。
+两粒子的相互作用势 :math:`u(r)=-\frac{A}{r^m}+\frac{B}{r^n}，其中m<n` ，在 :math:`r=r_0` 处引力与斥力平衡， :math:`u(r)` 取最小值。
 
-对于N个原子的原子晶体，不考虑表面，内聚能：
+对于N个原子的原子晶体，不考虑表面，晶体内能： 
 
 .. math::
 
 	U(r)=\frac{N}{2}\sum_j^N' u(r_{1j})
+
+当 :math:`r=r_0` 时，有最小值 :math:`U_c` ，取 :math:`|U_c|` 作为内聚能。
 
 体积弹性模量
 ------------
@@ -47,9 +49,9 @@
 
 .. math::
 
-	&对于A^+B^-型，U(r)=-NM\frac{e^2}{4\pi\varepsilon_0 r}+\frac{B}{r^m}\\
+	&对于C^+D^-型，U(r)=-NM\frac{e^2}{4\pi\varepsilon_0 r}+\frac{B}{r^n}\\
 	&其中第二项为泡利原理引起的排斥能\\
-	&马德隆常数M=\sum_j '\pm\frac{1}{a_j},a_j=\frac{r_{ij}}{r},相同离子取正
+	&马德隆常数M=\sum_j '\pm\frac{1}{a_j},a_j=\frac{r_{ij}}{r},相同离子取负
 
 分子晶体
 --------
@@ -67,6 +69,6 @@
 氢分子的分子轨道波函数有两种形式： 
 
 - :math:`\psi_+=C_+(\phi_A+\phi_B)` 电子自旋相反，成键轨道
-- :math:`\psi_+=C_+(\phi_A-\phi_B)` 电子自旋相同，反键轨道
+- :math:`\psi_-=C_+(\phi_A-\phi_B)` 电子自旋相同，反键轨道
 
 因而共价键有方向性、饱和性。 
