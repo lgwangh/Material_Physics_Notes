@@ -28,13 +28,10 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if on_rtd:
     latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #'papersize': 'letterpaper',
-
-    # The font size ('10pt', '11pt' or '12pt').
-    #'pointsize': '10pt',
-
-    # Additional stuff for the LaTeX preamble.
+    'papersize':'a4paper',# The font size ('10pt', '11pt' or '12pt').
+    'pointsize':'12pt','classoptions':',oneside','babel':'',#必須
+    'inputenc':'',#必須
+    'utf8extra':'',#必須
     'preamble': r'''
     \hypersetup{unicode=true}
     \usepackage{CJKutf8}
